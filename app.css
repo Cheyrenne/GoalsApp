@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    margin: 0 0 0.5em 0;
+    color: #6b2e00;
+}
+
+.container {
+    height: 100%;
+    background-image: url("cool-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input[type=text] {
+    width: 50vw;
+    height: 48px;
+    border: none;
+    background-color: whitesmoke;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+
+.todo-section, .goal-section {
+    margin: 5vh auto;
+}
+
+ul {
+    background-color: whitesmoke;
+    font-size: 18px;
+    padding: 10px 20px 40px 20px;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    border-bottom: 1px solid gray;
+    height: 48px;
+    
+}
+
+li > p {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+
+.icon > p {
+    position: relative;
+    text-align: center;
+}
+
+div > button {
+    height: 48px;
+    border: none;
+    background-color: antiquewhite;
+    font-size: 18px;
+}
