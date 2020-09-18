@@ -3,6 +3,14 @@ html, body {
     margin: 0;
 }
 
+body {
+    background-image: url("images/cool-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 input, button, h1, h2, h3, ul {
     font-family: monospace;
 }
@@ -18,14 +26,8 @@ i {
 }
 
 .container {
-    height: 100%;
-    background-image: url("images/cool-background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
-    
 }
 
 .add-todo-section, .add-goal-section {
