@@ -3,20 +3,33 @@ html, body {
     margin: 0;
 }
 
+input, button, h1, h2, h3, ul {
+    font-family: monospace;
+}
+
 h1 {
     margin: 0 0 0.5em 0;
-    color: #6b2e00;
+    color: white;
+    font-size: 3em;
+}
+
+i {
+    cursor: pointer;
 }
 
 .container {
     height: 100%;
-    background-image: url("cool-background.png");
+    background-image: url("images/cool-background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     
+}
+
+.add-todo-section, .add-goal-section {
+    display: flex;
 }
 
 input[type=text] {
@@ -26,8 +39,32 @@ input[type=text] {
     background-color: whitesmoke;
     padding: 0 5px;
     font-size: 18px;
+    color: dimgray;
 }
 
+div > button {
+    height: 48px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+div > button:hover {
+    background-color: mediumseagreen;
+}
+
+div > button:active {
+    box-shadow: inset 0px 0px 5px black;
+    outline: none;
+}
+
+div > button:disabled {
+    cursor: not-allowed;
+    background-color: orange;
+}
 
 .todo-section, .goal-section {
     margin: 5vh auto;
@@ -35,43 +72,27 @@ input[type=text] {
 
 ul {
     background-color: whitesmoke;
+    color: dimgray;
     font-size: 18px;
     padding: 10px 20px 40px 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
 }
 
 li {
-    position: relative;
+    /*position: relative;*/
     list-style: none;
     border-bottom: 1px solid gray;
     height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     
 }
 
 li > p {
     margin: 0;
-    position: absolute;
-    bottom: 0;
 }
 
-.icon {
-    position: absolute;
-    right: 0;
-    height: 40px;
-    width: 40px;
-    border-radius: px;
-    background-color: red;
-    color: white;
-    border-radius: 20px;
-}
-
-.icon > p {
-    position: relative;
-    text-align: center;
-}
-
-div > button {
-    height: 48px;
-    border: none;
-    background-color: antiquewhite;
-    font-size: 18px;
+.material-icons.red {
+    color: red;
 }

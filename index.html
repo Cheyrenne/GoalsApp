@@ -4,27 +4,39 @@
 <head>
     <title>Todos Goals</title>
     <link rel="stylesheet" href="app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
     <div class='container'>
         <div class='todo-section'>
             <h1>Todo List</h1>
-            <input type='text' id='todo' placeholder='Add Todo' />
-            <button id='todoBtn'>Add Todo</button>
+            <div class='add-todo-section'>
+                <input type='text' id='todo' placeholder='Add Todo' />
+                <button disabled='true' id='todoBtn'>Add Todo</button>
+            </div>
             <ul id='todos'>
                 <li>
                     <p>To do #1</p>
-                    <div class='icon'>
-                        <p>X</p>
+                    <div class='controls'>
+                        <i class='material-icons'>edit</i>
+                        <i class='material-icons red'>
+                        remove_circle
+                        </i>
                     </div>
+                </li>
+                <li>
+                    <p>to do # 2</p>
                 </li>
             </ul>
         </div>
         <div class='goal-section'>
             <h1>Goal List</h1>
-            <input type='text' id='goal' placeholder='Add Goal' />
-            <button id='goalBtn'>Add Goal</button>
+            <div class='add-goal-section'>
+                <input type='text' id='goal' placeholder='Add Goal' />
+                <button id='goalBtn'>Add Goal</button>
+            </div>
             <ul id='goals'></ul>
         </div>
 
